@@ -79,7 +79,7 @@ public class ProximitySensor implements AccelerometerListener.OrientationListene
 
         Log.d(this, "onCreate: mProximityWakeLock: ", mProximityWakeLock);
 
-        mAccelerometerListener = new AccelerometerListener(mcontext, this);
+        mAccelerometerListener = new AccelerometerListener(mContext, this);
         mProximityListener = new ProximityListener(context);
         mAudioModeProvider = audioModeProvider;
         mAudioModeProvider.addListener(this);
